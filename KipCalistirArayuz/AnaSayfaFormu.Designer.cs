@@ -28,117 +28,306 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnCalistir = new Button();
-            richTextBoxKod = new RichTextBox();
-            panel1 = new Panel();
-            richTextBoxCikis = new RichTextBox();
-            btnExePath = new Button();
-            textBoxInput = new TextBox();
-            label1 = new Label();
-            btnInputGonder = new Button();
-            panel1.SuspendLayout();
-            SuspendLayout();
+            this.kryRibbon = new Krypton.Ribbon.KryptonRibbon();
+            this.kryRibbonTabDosya = new Krypton.Ribbon.KryptonRibbonTab();
+            this.kryRibbonGroupDosyalar = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple3 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryRibbonGroupButtonDosyaAc = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRibbonGroupButtonKaydet = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRibbonTabGiris = new Krypton.Ribbon.KryptonRibbonTab();
+            this.kryRibbonGroupDebug = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple1 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryRibbonButtonCalistir = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRibbonGroupButtonDur = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRibbonGroupInputStream = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupSeparator1 = new Krypton.Ribbon.KryptonRibbonGroupSeparator();
+            this.kryptonRibbonGroupLinesInput = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryRibbonGroupLabelStdInput = new Krypton.Ribbon.KryptonRibbonGroupLabel();
+            this.kryRibbonGroupTextBoxStdInput = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
+            this.kryRibbonGroupButtonInputGonder = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRibbonGroupExe = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryRibbonGroupLinesExe = new Krypton.Ribbon.KryptonRibbonGroupLines();
+            this.kryRibbonGroupLabelExe = new Krypton.Ribbon.KryptonRibbonGroupLabel();
+            this.kryRibbonGroupTextBoxExeYolu = new Krypton.Ribbon.KryptonRibbonGroupTextBox();
+            this.kryRibbonGroupButtonExeSec = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroup1 = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryRibbonGroupButtonKitPage = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRibbonGroupButtonKitGitHubPage = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryptonRibbonGroupButton2 = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRichTextBoxKod = new Krypton.Toolkit.KryptonRichTextBox();
+            this.kryRichTextBoxCikis = new Krypton.Toolkit.KryptonRichTextBox();
+            this.kryLabelSourceBaslik = new Krypton.Toolkit.KryptonLabel();
+            this.kryLabelOutputBaslik = new Krypton.Toolkit.KryptonLabel();
+            this.kryptonRibbonGroupThemeComboBox1 = new Krypton.Ribbon.KryptonRibbonGroupThemeComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.kryRibbon)).BeginInit();
+            this.SuspendLayout();
             // 
-            // btnCalistir
+            // kryRibbon
             // 
-            btnCalistir.Location = new Point(578, 15);
-            btnCalistir.Name = "btnCalistir";
-            btnCalistir.Size = new Size(94, 29);
-            btnCalistir.TabIndex = 0;
-            btnCalistir.Text = "Çalıştır";
-            btnCalistir.UseVisualStyleBackColor = true;
-            btnCalistir.Click += btnCalistir_Click;
+            this.kryRibbon.Name = "kryRibbon";
+            this.kryRibbon.RibbonFileAppButton.AppButtonVisible = false;
+            this.kryRibbon.RibbonTabs.AddRange(new Krypton.Ribbon.KryptonRibbonTab[] {
+            this.kryRibbonTabDosya,
+            this.kryRibbonTabGiris});
+            this.kryRibbon.SelectedTab = this.kryRibbonTabGiris;
+            this.kryRibbon.Size = new System.Drawing.Size(1247, 121);
+            this.kryRibbon.StateCommon.RibbonGeneral.ContextTextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryRibbon.StateCommon.RibbonGeneral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.kryRibbon.TabIndex = 9;
             // 
-            // richTextBoxKod
+            // kryRibbonTabDosya
             // 
-            richTextBoxKod.Dock = DockStyle.Bottom;
-            richTextBoxKod.Location = new Point(0, 24);
-            richTextBoxKod.Name = "richTextBoxKod";
-            richTextBoxKod.Size = new Size(560, 402);
-            richTextBoxKod.TabIndex = 1;
-            richTextBoxKod.Text = "";
+            this.kryRibbonTabDosya.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryRibbonGroupDosyalar});
+            this.kryRibbonTabDosya.Text = "Dosya";
             // 
-            // panel1
+            // kryRibbonGroupDosyalar
             // 
-            panel1.Controls.Add(richTextBoxKod);
-            panel1.Location = new Point(12, 12);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(560, 426);
-            panel1.TabIndex = 3;
+            this.kryRibbonGroupDosyalar.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple3});
+            this.kryRibbonGroupDosyalar.TextLine1 = "Dosyalar";
             // 
-            // richTextBoxCikis
+            // kryptonRibbonGroupTriple3
             // 
-            richTextBoxCikis.Location = new Point(678, 16);
-            richTextBoxCikis.Name = "richTextBoxCikis";
-            richTextBoxCikis.ReadOnly = true;
-            richTextBoxCikis.Size = new Size(557, 422);
-            richTextBoxCikis.TabIndex = 4;
-            richTextBoxCikis.Text = "";
+            this.kryptonRibbonGroupTriple3.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryRibbonGroupButtonDosyaAc,
+            this.kryRibbonGroupButtonKaydet});
             // 
-            // btnExePath
+            // kryRibbonGroupButtonDosyaAc
             // 
-            btnExePath.Location = new Point(578, 97);
-            btnExePath.Name = "btnExePath";
-            btnExePath.Size = new Size(94, 29);
-            btnExePath.TabIndex = 5;
-            btnExePath.Text = "Kip Exe Seç";
-            btnExePath.UseVisualStyleBackColor = true;
-            btnExePath.Click += btnExePath_Click;
+            this.kryRibbonGroupButtonDosyaAc.ImageLarge = global::KipCalistirArayuz.Properties.Resources.open_file_svgrepo_com;
+            this.kryRibbonGroupButtonDosyaAc.ImageSmall = global::KipCalistirArayuz.Properties.Resources.open_file_svgrepo_com;
+            this.kryRibbonGroupButtonDosyaAc.TextLine1 = "Dosya Aç";
+            this.kryRibbonGroupButtonDosyaAc.Click += new System.EventHandler(this.kryRibbonGroupButtonDosyaAc_Click);
             // 
-            // textBoxInput
+            // kryRibbonGroupButtonKaydet
             // 
-            textBoxInput.Location = new Point(578, 238);
-            textBoxInput.Name = "textBoxInput";
-            textBoxInput.Size = new Size(94, 27);
-            textBoxInput.TabIndex = 6;
+            this.kryRibbonGroupButtonKaydet.ImageLarge = global::KipCalistirArayuz.Properties.Resources.export_content_svgrepo_com;
+            this.kryRibbonGroupButtonKaydet.ImageSmall = global::KipCalistirArayuz.Properties.Resources.export_content_svgrepo_com;
+            this.kryRibbonGroupButtonKaydet.TextLine1 = "Kaydet";
+            this.kryRibbonGroupButtonKaydet.Click += new System.EventHandler(this.kryRibbonGroupButtonKaydet_Click);
             // 
-            // label1
+            // kryRibbonTabGiris
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(595, 215);
-            label1.Name = "label1";
-            label1.Size = new Size(60, 20);
-            label1.TabIndex = 7;
-            label1.Text = "St Input";
+            this.kryRibbonTabGiris.Groups.AddRange(new Krypton.Ribbon.KryptonRibbonGroup[] {
+            this.kryRibbonGroupDebug,
+            this.kryRibbonGroupInputStream,
+            this.kryRibbonGroupExe,
+            this.kryptonRibbonGroup1});
+            this.kryRibbonTabGiris.Text = "Giriş";
             // 
-            // btnInputGonder
+            // kryRibbonGroupDebug
             // 
-            btnInputGonder.Location = new Point(578, 271);
-            btnInputGonder.Name = "btnInputGonder";
-            btnInputGonder.Size = new Size(94, 57);
-            btnInputGonder.TabIndex = 8;
-            btnInputGonder.Text = "Input Gönder";
-            btnInputGonder.UseVisualStyleBackColor = true;
-            btnInputGonder.Click += btnInputGonder_Click;
+            this.kryRibbonGroupDebug.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple1});
+            this.kryRibbonGroupDebug.MinimumWidth = 70;
+            this.kryRibbonGroupDebug.TextLine1 = "Debug";
+            // 
+            // kryptonRibbonGroupTriple1
+            // 
+            this.kryptonRibbonGroupTriple1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryRibbonButtonCalistir,
+            this.kryRibbonGroupButtonDur});
+            // 
+            // kryRibbonButtonCalistir
+            // 
+            this.kryRibbonButtonCalistir.ImageLarge = global::KipCalistirArayuz.Properties.Resources.debug_start_svgrepo_com;
+            this.kryRibbonButtonCalistir.ImageSmall = global::KipCalistirArayuz.Properties.Resources.debug_start_svgrepo_com;
+            this.kryRibbonButtonCalistir.TextLine1 = "Çalıştır";
+            this.kryRibbonButtonCalistir.Click += new System.EventHandler(this.kryRibbonButtonCalistir_Click);
+            // 
+            // kryRibbonGroupButtonDur
+            // 
+            this.kryRibbonGroupButtonDur.Enabled = false;
+            this.kryRibbonGroupButtonDur.ImageLarge = global::KipCalistirArayuz.Properties.Resources.debug_stop_svgrepo_com;
+            this.kryRibbonGroupButtonDur.TextLine1 = "Dur";
+            this.kryRibbonGroupButtonDur.Click += new System.EventHandler(this.kryRibbonGroupButtonDur_Click);
+            // 
+            // kryRibbonGroupInputStream
+            // 
+            this.kryRibbonGroupInputStream.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupSeparator1,
+            this.kryptonRibbonGroupLinesInput});
+            this.kryRibbonGroupInputStream.TextLine1 = "Input Stream";
+            // 
+            // kryptonRibbonGroupLinesInput
+            // 
+            this.kryptonRibbonGroupLinesInput.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryRibbonGroupLabelStdInput,
+            this.kryRibbonGroupTextBoxStdInput,
+            this.kryRibbonGroupButtonInputGonder});
+            // 
+            // kryRibbonGroupLabelStdInput
+            // 
+            this.kryRibbonGroupLabelStdInput.TextLine1 = "Input";
+            // 
+            // kryRibbonGroupTextBoxStdInput
+            // 
+            this.kryRibbonGroupTextBoxStdInput.Enabled = false;
+            this.kryRibbonGroupTextBoxStdInput.Text = "";
+            // 
+            // kryRibbonGroupButtonInputGonder
+            // 
+            this.kryRibbonGroupButtonInputGonder.Enabled = false;
+            this.kryRibbonGroupButtonInputGonder.ImageLarge = global::KipCalistirArayuz.Properties.Resources.right_arrow_3571491__1_;
+            this.kryRibbonGroupButtonInputGonder.ImageSmall = global::KipCalistirArayuz.Properties.Resources.right_arrow_3571491__1_;
+            this.kryRibbonGroupButtonInputGonder.TextLine1 = "Std Input Gönder";
+            this.kryRibbonGroupButtonInputGonder.Click += new System.EventHandler(this.kryRibbonGroupButtonInputGonder_Click);
+            // 
+            // kryRibbonGroupExe
+            // 
+            this.kryRibbonGroupExe.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryRibbonGroupLinesExe});
+            this.kryRibbonGroupExe.TextLine1 = "Exe ";
+            // 
+            // kryRibbonGroupLinesExe
+            // 
+            this.kryRibbonGroupLinesExe.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryRibbonGroupLabelExe,
+            this.kryRibbonGroupTextBoxExeYolu,
+            this.kryRibbonGroupButtonExeSec});
+            this.kryRibbonGroupLinesExe.MinimumSize = Krypton.Ribbon.GroupItemSize.Large;
+            // 
+            // kryRibbonGroupLabelExe
+            // 
+            this.kryRibbonGroupLabelExe.TextLine1 = "Exe Yolu";
+            // 
+            // kryRibbonGroupTextBoxExeYolu
+            // 
+            this.kryRibbonGroupTextBoxExeYolu.Text = "";
+            // 
+            // kryRibbonGroupButtonExeSec
+            // 
+            this.kryRibbonGroupButtonExeSec.ImageLarge = global::KipCalistirArayuz.Properties.Resources.exam_2334151;
+            this.kryRibbonGroupButtonExeSec.ImageSmall = global::KipCalistirArayuz.Properties.Resources.exam_2334151;
+            this.kryRibbonGroupButtonExeSec.TextLine1 = "Exe Yolu Seç";
+            this.kryRibbonGroupButtonExeSec.Click += new System.EventHandler(this.kryRibbonGroupButtonExeSec_Click);
+            // 
+            // kryptonRibbonGroup1
+            // 
+            this.kryptonRibbonGroup1.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple2});
+            this.kryptonRibbonGroup1.TextLine1 = "Kip Info";
+            // 
+            // kryptonRibbonGroupTriple2
+            // 
+            this.kryptonRibbonGroupTriple2.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryRibbonGroupButtonKitPage,
+            this.kryRibbonGroupButtonKitGitHubPage});
+            // 
+            // kryRibbonGroupButtonKitPage
+            // 
+            this.kryRibbonGroupButtonKitPage.ImageLarge = global::KipCalistirArayuz.Properties.Resources.kip;
+            this.kryRibbonGroupButtonKitPage.ImageSmall = global::KipCalistirArayuz.Properties.Resources.kip;
+            this.kryRibbonGroupButtonKitPage.TextLine1 = "Kip Sitesi";
+            this.kryRibbonGroupButtonKitPage.Click += new System.EventHandler(this.kryRibbonGroupButtonKitGitHubPage_Click);
+            // 
+            // kryRibbonGroupButtonKitGitHubPage
+            // 
+            this.kryRibbonGroupButtonKitGitHubPage.ImageLarge = global::KipCalistirArayuz.Properties.Resources.github_logo;
+            this.kryRibbonGroupButtonKitGitHubPage.ImageSmall = global::KipCalistirArayuz.Properties.Resources.github_logo;
+            this.kryRibbonGroupButtonKitGitHubPage.TextLine1 = "Kip GitHub";
+            this.kryRibbonGroupButtonKitGitHubPage.Click += new System.EventHandler(this.kryRibbonGroupButtonKitGitHubPage_Click_1);
+            // 
+            // kryRichTextBoxKod
+            // 
+            this.kryRichTextBoxKod.Location = new System.Drawing.Point(0, 174);
+            this.kryRichTextBoxKod.Name = "kryRichTextBoxKod";
+            this.kryRichTextBoxKod.Size = new System.Drawing.Size(1235, 416);
+            this.kryRichTextBoxKod.TabIndex = 11;
+            this.kryRichTextBoxKod.Text = "";
+            // 
+            // kryRichTextBoxCikis
+            // 
+            this.kryRichTextBoxCikis.Location = new System.Drawing.Point(0, 627);
+            this.kryRichTextBoxCikis.Name = "kryRichTextBoxCikis";
+            this.kryRichTextBoxCikis.Size = new System.Drawing.Size(1235, 109);
+            this.kryRichTextBoxCikis.TabIndex = 12;
+            this.kryRichTextBoxCikis.Text = "";
+            // 
+            // kryLabelSourceBaslik
+            // 
+            this.kryLabelSourceBaslik.Location = new System.Drawing.Point(0, 143);
+            this.kryLabelSourceBaslik.Name = "kryLabelSourceBaslik";
+            this.kryLabelSourceBaslik.Size = new System.Drawing.Size(90, 25);
+            this.kryLabelSourceBaslik.TabIndex = 13;
+            this.kryLabelSourceBaslik.Values.Text = "Kip Source";
+            // 
+            // kryLabelOutputBaslik
+            // 
+            this.kryLabelOutputBaslik.Location = new System.Drawing.Point(0, 596);
+            this.kryLabelOutputBaslik.Name = "kryLabelOutputBaslik";
+            this.kryLabelOutputBaslik.Size = new System.Drawing.Size(90, 25);
+            this.kryLabelOutputBaslik.TabIndex = 14;
+            this.kryLabelOutputBaslik.Values.Text = "Çıkış";
+            // 
+            // kryptonRibbonGroupThemeComboBox1
+            // 
+            this.kryptonRibbonGroupThemeComboBox1.DefaultPalette = Krypton.Toolkit.PaletteMode.Microsoft365Blue;
+            this.kryptonRibbonGroupThemeComboBox1.DropDownWidth = 121;
+            this.kryptonRibbonGroupThemeComboBox1.FormattingEnabled = false;
+            this.kryptonRibbonGroupThemeComboBox1.ItemHeight = 20;
             // 
             // AnaSayfaFormu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1247, 450);
-            Controls.Add(btnInputGonder);
-            Controls.Add(label1);
-            Controls.Add(textBoxInput);
-            Controls.Add(btnExePath);
-            Controls.Add(richTextBoxCikis);
-            Controls.Add(panel1);
-            Controls.Add(btnCalistir);
-            Name = "AnaSayfaFormu";
-            Text = "AnaSayfaFormu";
-            panel1.ResumeLayout(false);
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(1247, 737);
+            this.CloseBox = false;
+            this.Controls.Add(this.kryLabelOutputBaslik);
+            this.Controls.Add(this.kryLabelSourceBaslik);
+            this.Controls.Add(this.kryRichTextBoxCikis);
+            this.Controls.Add(this.kryRichTextBoxKod);
+            this.Controls.Add(this.kryRibbon);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Center;
+            this.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.SeparatorLowProfile;
+            this.HelpButton = true;
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Name = "AnaSayfaFormu";
+            this.Text = "Ana Sayfa";
+            this.UseDropShadow = true;
+            this.Load += new System.EventHandler(this.AnaSayfaFormu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.kryRibbon)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
-
-        private Button btnCalistir;
-        private RichTextBox richTextBoxKod;
-        private Panel panel1;
-        private RichTextBox richTextBoxCikis;
-        private Button btnExePath;
-        private TextBox textBoxInput;
-        private Label label1;
-        private Button btnInputGonder;
+        private Krypton.Ribbon.KryptonRibbon kryRibbon;
+        private Krypton.Ribbon.KryptonRibbonTab kryRibbonTabGiris;
+        private Krypton.Ribbon.KryptonRibbonGroup kryRibbonGroupDebug;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonButtonCalistir;
+        private Krypton.Ribbon.KryptonRibbonGroup kryRibbonGroupInputStream;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryptonRibbonGroupButton2;
+        private Krypton.Ribbon.KryptonRibbonGroupSeparator kryptonRibbonGroupSeparator1;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryptonRibbonGroupLinesInput;
+        private Krypton.Ribbon.KryptonRibbonGroupLabel kryRibbonGroupLabelStdInput;
+        private Krypton.Ribbon.KryptonRibbonGroupTextBox kryRibbonGroupTextBoxStdInput;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonInputGonder;
+        private Krypton.Ribbon.KryptonRibbonGroup kryRibbonGroupExe;
+        private Krypton.Ribbon.KryptonRibbonGroupLines kryRibbonGroupLinesExe;
+        private Krypton.Ribbon.KryptonRibbonGroupLabel kryRibbonGroupLabelExe;
+        private Krypton.Ribbon.KryptonRibbonGroupTextBox kryRibbonGroupTextBoxExeYolu;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonExeSec;
+        private Krypton.Toolkit.KryptonRichTextBox kryRichTextBoxKod;
+        private Krypton.Toolkit.KryptonRichTextBox kryRichTextBoxCikis;
+        private Krypton.Toolkit.KryptonLabel kryLabelSourceBaslik;
+        private Krypton.Toolkit.KryptonLabel kryLabelOutputBaslik;
+        private Krypton.Ribbon.KryptonRibbonGroup kryptonRibbonGroup1;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple2;
+        private Krypton.Ribbon.KryptonRibbonGroupThemeComboBox kryptonRibbonGroupThemeComboBox1;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonKitPage;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonKitGitHubPage;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonDur;
+        private Krypton.Ribbon.KryptonRibbonTab kryRibbonTabDosya;
+        private Krypton.Ribbon.KryptonRibbonGroup kryRibbonGroupDosyalar;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple3;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonDosyaAc;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonKaydet;
     }
 }
