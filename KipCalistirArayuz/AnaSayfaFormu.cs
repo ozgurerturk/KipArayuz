@@ -193,6 +193,8 @@ namespace KipCalistirArayuz
 
             if (ofd.ShowDialog(this) == DialogResult.OK)
             {
+                kryRibbonGroupTextBoxExeYolu.Text = ofd.FileName;
+
                 _config.AppSettings.Settings.Remove("KipCalistirExeYolu");
                 _config.AppSettings.Settings.Add("KipCalistirExeYolu", kryRibbonGroupTextBoxExeYolu.Text);
                 _config.Save(ConfigurationSaveMode.Modified);
