@@ -63,6 +63,26 @@ namespace KipCalistirArayuz.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_circle_svgrepo_com {
+            get {
+                object obj = ResourceManager.GetObject("close-circle-svgrepo-com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_svgrepo_com {
+            get {
+                object obj = ResourceManager.GetObject("close-svgrepo-com", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap debug_start_svgrepo_com {
             get {
                 object obj = ResourceManager.GetObject("debug-start-svgrepo-com", resourceCulture);

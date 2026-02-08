@@ -67,12 +67,6 @@ namespace KipCalistirArayuz
             });
         }
 
-        private void btnExePath_Click(object sender, EventArgs e)
-        {
-            ConfigForm configForm = new();
-            configForm.ShowDialog();
-        }
-
         private static Task WriteAllTextAsyncCompat(string path, string contents, Encoding encoding)
         {
 #if NET8_0_OR_GREATER
@@ -288,6 +282,23 @@ namespace KipCalistirArayuz
 
             MessageBox.Show($"Kip kodu başarıyla kaydedildi: {kipFilePath}", "Bilgi",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void kryRibbonGroupButtonExit_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Çıkmak istediğinize emin misiniz? Değişiklikler kaybolacaktır.", "Çıkış", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) != DialogResult.Yes)
+            {
+                return;
+            }
+
+            // Close the Kip process if it's still running
+
+            if (_kipProcess != null && !_kipProcess.HasExited)
+            {
+                _kipProcess.Kill();
+            }
+
+            Application.Exit();
         }
     }
 }

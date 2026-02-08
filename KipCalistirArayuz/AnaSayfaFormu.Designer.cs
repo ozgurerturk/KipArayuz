@@ -54,6 +54,9 @@
             this.kryptonRibbonGroupTriple2 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
             this.kryRibbonGroupButtonKitPage = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryRibbonGroupButtonKitGitHubPage = new Krypton.Ribbon.KryptonRibbonGroupButton();
+            this.kryRibbonGroupExit = new Krypton.Ribbon.KryptonRibbonGroup();
+            this.kryptonRibbonGroupTriple4 = new Krypton.Ribbon.KryptonRibbonGroupTriple();
+            this.kryRibbonGroupButtonExit = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryptonRibbonGroupButton2 = new Krypton.Ribbon.KryptonRibbonGroupButton();
             this.kryLabelSourceBaslik = new Krypton.Toolkit.KryptonLabel();
             this.kryLabelOutputBaslik = new Krypton.Toolkit.KryptonLabel();
@@ -71,7 +74,7 @@
             this.kryRibbonTabDosya,
             this.kryRibbonTabGiris});
             this.kryRibbon.SelectedTab = this.kryRibbonTabGiris;
-            this.kryRibbon.Size = new System.Drawing.Size(1247, 121);
+            this.kryRibbon.Size = new System.Drawing.Size(1247, 156);
             this.kryRibbon.StateCommon.RibbonGeneral.ContextTextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryRibbon.StateCommon.RibbonGeneral.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.kryRibbon.TabIndex = 9;
@@ -114,7 +117,8 @@
             this.kryRibbonGroupDebug,
             this.kryRibbonGroupInputStream,
             this.kryRibbonGroupExe,
-            this.kryptonRibbonGroup1});
+            this.kryptonRibbonGroup1,
+            this.kryRibbonGroupExit});
             this.kryRibbonTabGiris.Text = "Giriş";
             // 
             // kryRibbonGroupDebug
@@ -230,9 +234,27 @@
             this.kryRibbonGroupButtonKitGitHubPage.TextLine1 = "Kip GitHub";
             this.kryRibbonGroupButtonKitGitHubPage.Click += new System.EventHandler(this.kryRibbonGroupButtonKitGitHubPage_Click_1);
             // 
+            // kryRibbonGroupExit
+            // 
+            this.kryRibbonGroupExit.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupContainer[] {
+            this.kryptonRibbonGroupTriple4});
+            this.kryRibbonGroupExit.TextLine1 = "Windows";
+            // 
+            // kryptonRibbonGroupTriple4
+            // 
+            this.kryptonRibbonGroupTriple4.Items.AddRange(new Krypton.Ribbon.KryptonRibbonGroupItem[] {
+            this.kryRibbonGroupButtonExit});
+            // 
+            // kryRibbonGroupButtonExit
+            // 
+            this.kryRibbonGroupButtonExit.ImageLarge = global::KipCalistirArayuz.Properties.Resources.close_svgrepo_com;
+            this.kryRibbonGroupButtonExit.ImageSmall = global::KipCalistirArayuz.Properties.Resources.close_svgrepo_com;
+            this.kryRibbonGroupButtonExit.TextLine1 = "Çıkış";
+            this.kryRibbonGroupButtonExit.Click += new System.EventHandler(this.kryRibbonGroupButtonExit_Click);
+            // 
             // kryLabelSourceBaslik
             // 
-            this.kryLabelSourceBaslik.Location = new System.Drawing.Point(0, 143);
+            this.kryLabelSourceBaslik.Location = new System.Drawing.Point(12, 178);
             this.kryLabelSourceBaslik.Name = "kryLabelSourceBaslik";
             this.kryLabelSourceBaslik.Size = new System.Drawing.Size(90, 25);
             this.kryLabelSourceBaslik.TabIndex = 13;
@@ -255,9 +277,9 @@
             // 
             // kryRichTextBoxKod
             // 
-            this.kryRichTextBoxKod.Location = new System.Drawing.Point(0, 174);
+            this.kryRichTextBoxKod.Location = new System.Drawing.Point(0, 209);
             this.kryRichTextBoxKod.Name = "kryRichTextBoxKod";
-            this.kryRichTextBoxKod.Size = new System.Drawing.Size(1235, 416);
+            this.kryRichTextBoxKod.Size = new System.Drawing.Size(1235, 381);
             this.kryRichTextBoxKod.TabIndex = 16;
             this.kryRichTextBoxKod.Text = "";
             // 
@@ -265,6 +287,7 @@
             // 
             this.kryRichTextBoxCikis.Location = new System.Drawing.Point(0, 629);
             this.kryRichTextBoxCikis.Name = "kryRichTextBoxCikis";
+            this.kryRichTextBoxCikis.ReadOnly = true;
             this.kryRichTextBoxCikis.Size = new System.Drawing.Size(1235, 121);
             this.kryRichTextBoxCikis.TabIndex = 17;
             this.kryRichTextBoxCikis.Text = "";
@@ -276,16 +299,19 @@
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1247, 737);
             this.CloseBox = false;
+            this.ControlBox = false;
             this.Controls.Add(this.kryRichTextBoxCikis);
             this.Controls.Add(this.kryRichTextBoxKod);
             this.Controls.Add(this.kryLabelOutputBaslik);
             this.Controls.Add(this.kryLabelSourceBaslik);
             this.Controls.Add(this.kryRibbon);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.FormTitleAlign = Krypton.Toolkit.PaletteRelativeAlign.Center;
             this.GroupBorderStyle = Krypton.Toolkit.PaletteBorderStyle.SeparatorLowProfile;
             this.HelpButton = true;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "AnaSayfaFormu";
             this.Text = "Ana Sayfa";
             this.UseDropShadow = true;
@@ -329,5 +355,8 @@
         private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonKaydet;
         private RichTextBox kryRichTextBoxKod;
         private RichTextBox kryRichTextBoxCikis;
+        private Krypton.Ribbon.KryptonRibbonGroup kryRibbonGroupExit;
+        private Krypton.Ribbon.KryptonRibbonGroupTriple kryptonRibbonGroupTriple4;
+        private Krypton.Ribbon.KryptonRibbonGroupButton kryRibbonGroupButtonExit;
     }
 }
