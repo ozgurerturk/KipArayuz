@@ -1,6 +1,8 @@
 # Kip Windows Arayüz
 
-Kip programming UI for Windows - [Kip](https://github.com/kip-dili/kip).
+An experimental tool for the Kip programming language for Windows Usage - [Kip](https://github.com/kip-dili/kip).
+
+Please refer to Kip github page to learn about the language itself. You can try the language through Kip Playground in its page: [Kip Playground](https://kip-dili.github.io/)
 
 # Requirements
 
@@ -10,7 +12,9 @@ Please refer to the installation guide for the Kip programming language in its G
 
 * You can use MSYS2 for cloning and building Foma in its environment, don't forget to build bison and flex before building Foma through MSYS2 command line (Use MSYS2 MINGW64)
 
-* Enter the following command first and press enter to isntall all the highlighted packages
+[MSYS2 Download for Windows](https://www.msys2.org/)
+
+* Enter the following command first and press enter to install all the highlighted packages
 
 ```
 
@@ -34,7 +38,7 @@ pacman -S --needed bison flex
 
 ```
 
-* After making sure that installations are done correctly, git clone the Foma, create makefile with cmake
+* After making sure that installations are done correctly, git clone the Foma [Foma GitHub Page](https://github.com/mhulden/foma), create makefile with cmake
 
 ```
 
@@ -52,7 +56,7 @@ mingw32-make install
 
 ```
 
-* Add these environment variables PATHs, installed foma and msys2 paths may vary.
+* Add these environment variables PATHs, installed Foma and MSYS2 paths may vary.
 
 ```
 
@@ -61,7 +65,7 @@ C:\Program Files (x86)\foma\bin
 
 ```
 
-* After installing Stack and cloning Kip, open the "stack.yaml" file in a text editor and add following commands to the end of the text to make sure Stack finds Foma files
+* After installing Stack and cloning Kip, locate the stack.yaml file in where Kip is cloned into, open the "stack.yaml" file in a text editor and add following commands to the end of the text to make sure Stack finds Foma files
 
 ```
 
@@ -73,7 +77,7 @@ extra-lib-dirs:
 
 ```
 
-* After making sure that Foma and Stack is built properly with stack.yaml file changed, stack build and install Kip, Kip should work through command line
+* After making sure that Foma and Stack is built properly with stack.yaml file changed, stack build and install Kip through command line after opening Kip project's path, Kip should work through command line after building and installing
 
 ```
 
@@ -86,3 +90,21 @@ stack install
 ```
 
 * Find where kip.exe is loaded into and choose it with the "Exe Yolu Seç(Find Exe Path) button.
+
+<img width="240" height="106" alt="image" src="https://github.com/user-attachments/assets/f6347d8e-f057-49a4-8308-0cf33560323a" />
+
+# Usage Guide
+
+Before starting, make sure you installed the Kip.exe successfully and manage to run it through the windows command line and then chose the kip.exe file path correctly.
+
+Home Page
+
+<img width="1170" height="767" alt="image" src="https://github.com/user-attachments/assets/adc043af-3e32-4403-81c3-7157cc12fcfd" />
+
+Write your Kip code in "Kip Source" and press Run(Çalıştır) button to start the script. If the script expects an input, "Input" textbox in the Input Stream Group will be enabled.
+
+File Page
+
+<img width="1162" height="212" alt="image" src="https://github.com/user-attachments/assets/e0f5a33d-1080-4321-8700-a3f8739232f7" />
+
+Use the File(Dosya) tab for importing or exporting .kip files.
