@@ -101,7 +101,14 @@ Home Page
 
 <img width="1170" height="767" alt="image" src="https://github.com/user-attachments/assets/adc043af-3e32-4403-81c3-7157cc12fcfd" />
 
-Write your Kip code in "Kip Source" and press Run(Çalıştır) button to start the script. If the script expects an input, "Input" textbox in the Input Stream Group will be enabled.
+Write your Kip code in "Kip Source" and press Run(Çalıştır) button to start the script.
+
+<img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/df129856-5765-47cc-a66d-216c2a354813" />
+
+If the script expects an input, "Input" textbox in the Input Stream Group will be enabled. Enter it and send the input.
+
+<img width="1167" height="762" alt="image" src="https://github.com/user-attachments/assets/a27717a8-cebc-4e59-b1c4-b0ce983768fe" />
+
 
 File Page
 
